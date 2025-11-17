@@ -1,0 +1,56 @@
+@import "./base.css";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap");
+
+body {
+  background: var(--bg) !important;
+  color: snow;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  transition: background 0.4s ease !important;
+}
+
+button:focus {
+  outline: 2px solid orange;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--site-max-width);
+  min-width: var(--site-min-width);
+  padding-inline: var(--site-padding-inline);
+  margin-inline: auto;
+}
+
+.text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.text-500 {
+  font-weight: 500;
+}
+
+.text-700 {
+  font-weight: 800;
+}
+
+.text-s {
+  font-size: var(--font-size-s);
+}
+
+.text-m {
+  font-size: var(--font-size-m);
+}
+
+.text-l {
+  font-size: var(--font-size-l);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--text);
+  user-select: none;
+}

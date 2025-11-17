@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      :root {
+        /* Gradients */
+        --gradient-light: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+        --gradient-dark: linear-gradient(180deg, #040918 0%, #091540 100%);
+        --bg-initial: var(--gradient-light);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-initial: var(--gradient-dark);
+        }
+      }
+
+      body {
+        min-height: 100vh;
+        background: var(--bg-initial);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
